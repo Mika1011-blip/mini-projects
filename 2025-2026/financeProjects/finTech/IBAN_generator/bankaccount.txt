@@ -1,0 +1,308 @@
+Code banqueee:	30004
+Code agence:	01026
+Numero de compte bancaire:	796233790HH
+Chiffre d'indicatif national:	21
+Code banque:	10278
+Code agence:	01755
+Numero de compte bancaire:	90634526631
+Chiffre d'indicatif national:	64
+Code banque:	30456
+Code agence:	01090
+Numero de compte bancaire:	58370720873
+Chiffre d'indicatif national:	27
+Code banque:	20041
+Code agence:	01031
+
+
+
+
+
+
+
+Numero de compte bancaire:	26172221786
+Chiffre d'indicatif national:	10
+Code banque:	15307
+Code agence:	01810
+Numero de compte bancaire:	78724687135
+Chiffre d'indicatif national:	51
+Code banque:	30004
+Code agence:	01049
+Numero de compte bancaire:	67449280520
+Chiffre d'indicatif national:	51
+Code banque:	10107
+Code agence:	01709
+Numero de compte bancaire:	94883463853
+Chiffre d'indicatif national:	67
+Code banque:	30456
+Code agence:	01607
+Numero de compte bancaire:	46941204936
+Chiffre d'indicatif national:	33
+Code banque:	15307
+Code agence:	01282
+Numero de compte bancaire:	19723498012
+Chiffre d'indicatif national:	35
+Code banque:	18106
+Code agence:	01378
+Numero de compte bancaire:	39325262520
+Chiffre d'indicatif national:	02
+Code banque:	10278
+Code agence:	01684
+Numero de compte bancaire:	23968831415
+Chiffre d'indicatif national:	57
+Code banque:	30004
+Code agence:	01673
+Numero de compte bancaire:	86702918428
+Chiffre d'indicatif national:	89
+Code banque:	30456
+Code agence:	01759
+Numero de compte bancaire:	01937240811
+Chiffre d'indicatif national:	65
+Code banque:	10107
+Code agence:	01611
+Numero de compte bancaire:	96443308432
+Chiffre d'indicatif national:	45
+Code banque:	15307
+Code agence:	01560
+Numero de compte bancaire:	37795504013
+Chiffre d'indicatif national:	27
+Code banque:	18106
+Code agence:	01044
+Numero de compte bancaire:	05830627539
+Chiffre d'indicatif national:	16
+Code banque:	20041
+Code agence:	01016
+Numero de compte bancaire:	12933508062
+Chiffre d'indicatif national:	14
+Code banque:	30003
+Code agence:	01080
+Numero de compte bancaire:	91845502300
+Chiffre d'indicatif national:	26
+Code banque:	30456
+Code agence:	01779
+Numero de compte bancaire:	20534484817
+Chiffre d'indicatif national:	36
+Code banque:	15307
+Code agence:	01666
+Numero de compte bancaire:	46443753085
+Chiffre d'indicatif national:	40
+Code banque:	30004
+Code agence:	01057
+Numero de compte bancaire:	03491363834
+Chiffre d'indicatif national:	58
+Code banque:	10278
+Code agence:	01652
+Numero de compte bancaire:	04211678251
+Chiffre d'indicatif national:	05
+Code banque:	30456
+Code agence:	01699
+Numero de compte bancaire:	33111466327
+Chiffre d'indicatif national:	77
+Code banque:	15307
+Code agence:	01299
+Numero de compte bancaire:	43799067007
+Chiffre d'indicatif national:	53
+Code banque:	20041
+Code agence:	01188
+Numero de compte bancaire:	66281435318
+Chiffre d'indicatif national:	35
+Code banque:	30003
+Code agence:	01300
+Numero de compte bancaire:	15287303602
+Chiffre d'indicatif national:	29
+Code banque:	18106
+Code agence:	01186
+Numero de compte bancaire:	10775031802
+Chiffre d'indicatif national:	68
+Code banque:	10107
+Code agence:	01752
+Numero de compte bancaire:	32521054918
+Chiffre d'indicatif national:	88
+Code banque:	10278
+Code agence:	01821
+Numero de compte bancaire:	55688074522
+Chiffre d'indicatif national:	78
+Code banque:	30004
+Code agence:	01611
+Numero de compte bancaire:	57464001372
+Chiffre d'indicatif national:	45
+Code banque:	30456
+Code agence:	01710
+Numero de compte bancaire:	39121215238
+Chiffre d'indicatif national:	41
+Code banque:	15307
+Code agence:	01539
+Numero de compte bancaire:	77894073706
+Chiffre d'indicatif national:	35
+Code banque:	30003
+Code agence:	01003
+Numero de compte bancaire:	58586414539
+Chiffre d'indicatif national:	24
+Code banque:	20041
+Code agence:	01078
+Numero de compte bancaire:	12485892092
+Chiffre d'indicatif national:	05
+Code banque:	10107
+Code agence:	01603
+Numero de compte bancaire:	95087786882
+Chiffre d'indicatif national:	54
+Code banque:	30456
+Code agence:	01682
+Numero de compte bancaire:	19008607945
+Chiffre d'indicatif national:	21
+Code banque:	15307
+Code agence:	01211
+Numero de compte bancaire:	12345678901
+Chiffre d'indicatif national:	76
+Code banque:	30004
+Code agence:	01548
+Numero de compte bancaire:	85909699483
+Chiffre d'indicatif national:	70
+Code banque:	18106
+Code agence:	01277
+Numero de compte bancaire:	53678901234
+Chiffre d'indicatif national:	21
+Code banque:	10278
+Code agence:	01722
+Numero de compte bancaire:	34210987654
+Chiffre d'indicatif national:	90
+Code banque:	30003
+Code agence:	01455
+Numero de compte bancaire:	11122233344
+Chiffre d'indicatif national:	12
+Code banque:	20041
+Code agence:	01002
+Numero de compte bancaire:	0500013M026
+Chiffre d'indicatif national:	06
+Code banque:	30456
+Code agence:	01667
+Numero de compte bancaire:	82764373670
+Chiffre d'indicatif national:	04
+Code banque:	30456
+Code agence:	01794
+Numero de compte bancaire:	62206148127
+Chiffre d'indicatif national:	92
+Code banque:	15307
+Code agence:	01846
+Numero de compte bancaire:	80449144995
+Chiffre d'indicatif national:	51
+Code banque:	30004
+Code agence:	01624
+Numero de compte bancaire:	24202047459
+Chiffre d'indicatif national:	68
+Code banque:	30456
+Code agence:	01747
+Numero de compte bancaire:	262863730O0
+Chiffre d'indicatif national:	56
+Code banque:	20041
+Code agence:	01031
+Numero de compte bancaire:	26172221786
+Chiffre d'indicatif national:	10
+Code banque:	10107
+Code agence:	01687
+Numero de compte bancaire:	95635941509
+Chiffre d'indicatif national:	68
+Code banque:	30004
+Code agence:	01624
+Numero de compte bancaire:	24202047459
+Chiffre d'indicatif national:	68
+Code banque:	30456
+Code agence:	01747
+Numero de compte bancaire:	262863730O0
+Chiffre d'indicatif national:	56
+Code banque:	15307
+Code agence:	01277
+Numero de compte bancaire:	97238058536
+Chiffre d'indicatif national:	51
+Code banque:	10278
+Code agence:	01652
+Numero de compte bancaire:	04211678251
+Chiffre d'indicatif national:	05
+Code banque:	30004
+Code agence:	01673
+Numero de compte bancaire:	86702918428
+Chiffre d'indicatif national:	89
+Code banque:	30456
+Code agence:	01759
+Numero de compte bancaire:	01937240811
+Chiffre d'indicatif national:	65
+Code banque:	10107
+Code agence:	01611
+Numero de compte bancaire:	96443308432
+Chiffre d'indicatif national:	45
+Code banque:	15307
+Code agence:	01560
+Numero de compte bancaire:	37795504013
+Chiffre d'indicatif national:	27
+Code banque:	18106
+Code agence:	01044
+Numero de compte bancaire:	05830627539
+Chiffre d'indicatif national:	16
+Code banque:	20041
+Code agence:	01016
+Numero de compte bancaire:	12933508062
+Chiffre d'indicatif national:	14
+Code banque:	30003
+Code agence:	01080
+Numero de compte bancaire:	91845502300
+Chiffre d'indicatif national:	26
+Code banque:	30456
+Code agence:	01779
+Numero de compte bancaire:	20534484817
+Chiffre d'indicatif national:	36
+Code banque:	15307
+Code agence:	01666
+Numero de compte bancaire:	46443753085
+Chiffre d'indicatif national:	40
+Code banque:	30004
+Code agence:	01057
+Numero de compte bancaire:	03491363834
+Chiffre d'indicatif national:	58
+Code banque:	10278
+Code agence:	01652
+Numero de compte bancaire:	04211678251
+Chiffre d'indicatif national:	05
+Code banque:	30456
+Code agence:	01699
+Numero de compte bancaire:	33111466327
+Chiffre d'indicatif national:	77
+Code banque:	15307
+Code agence:	01299
+Numero de compte bancaire:	43799067007
+Chiffre d'indicatif national:	53
+Code banque:	20041
+Code agence:	01188
+Numero de compte bancaire:	66281435318
+Chiffre d'indicatif national:	35
+Code banque:	30003
+Code agence:	01300
+Numero de compte bancaire:	15287303602
+Chiffre d'indicatif national:	29
+
+
+é
+
+
+Code banque:	18106
+Code agence:	01186
+Numero de compte bancaire:	10775031802
+Chiffre d'indicatif national:	68
+Code banque:	10107
+Code agence:	01752
+Numero de compte bancaire:	32521054918
+Chiffre d'indicatif national:	88
+Code banque:	10278
+Code agence:	01821
+Numero de compte bancaire:	55688074522
+Chiffre d'indicatif national:	78
+Code banque:	30004
+Code agence:	01611
+Numero de compte bancaire:	57464001372
+Chiffre d'indicatif national:	45
+Code banque:	30456
+Code agence:	01710
+Numero de compte bancaire:	39121215238
+Chiffre d'indicatif national:	41
+Code banque:	15307
+Code agence:	01539
+Numero de compte bancaire:	77894073706
+Chiffre d'indicatif national:	35

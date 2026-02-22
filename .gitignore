@@ -1,0 +1,94 @@
+﻿# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Env / Secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+coverage/
+.npm/
+.pnpm-store/
+
+# Package managers
+*.egg-info/
+.eggs/
+
+# Docker / temp
+*.pid
+tmp/
+temp/
+.cache/
+
+# ML artifacts / generated data
+artifacts/
+outputs/
+runs/
+wandb/
+mlruns/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.joblib
+*.pkl
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.nii
+*.nii.gz
+
+# Archives
+*.zip
+*.7z
+*.tar
+*.tgz

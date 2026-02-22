@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1734137955 source:c:\users\thaim\onedrive\documents\code c\project\system_billet_reservation\functions.cpp
+	"header.h"
+
+1734045838 source:c:\users\thaim\onedrive\documents\code c\project\system_billet_reservation\main.cpp
+	"header.h"
+
+1734049774 c:\users\thaim\onedrive\documents\code c\project\system_billet_reservation\header.h
+	<iostream>
+	<vector>
+	<string>
+	<map>
+	<cmath>
+	<ctime>
+	<cstdlib>
+	<fstream>
+	<iomanip>
+	<sstream>
+	<algorithm>
+	<chrono>
+	<random>
+
+1734055631 source:c:\users\thaim\onedrive\documents\code c\project\system_billet_reservation\wrapped_functions.cpp
+	"header.h"
+
+1733757681 source:c:\users\thaim\onedrive\documents\code c\project\system_billet_reservation\global.cpp
+	"header.h"
+

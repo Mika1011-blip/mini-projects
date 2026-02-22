@@ -1,0 +1,7 @@
+[2025-12-14 21:19:06] I am a cool guy.
+[2025-12-14 21:24:57] My name is Mika.
+[2025-12-14 21:26:18] I have a 9 a.m. meeting tomorrow.
+[2025-12-14 21:39:10] I have a meeting tomorrow at 10 a.m.
+[2025-12-14 21:42:12] that this model kind of have some problem at understanding natural speech.
+[2025-12-14 23:26:20] This week I am busy.
+[2025-12-15 01:57:00] I have a meeting on Tuesday with Google.

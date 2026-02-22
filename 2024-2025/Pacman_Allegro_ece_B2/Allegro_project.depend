@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1733849382 source:c:\users\thaim\onedrive\documents\code c\project\projetpacman\projetpacman\pacman.c
+	"pacman.h"
+
+1733847335 c:\users\thaim\onedrive\documents\code c\project\projetpacman\projetpacman\pacman.h
+	<allegro.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<math.h>
+
+1733849420 source:c:\users\thaim\onedrive\documents\code c\project\projetpacman\projetpacman\main.c
+	"pacman.h"
+
