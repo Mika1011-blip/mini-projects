@@ -1,0 +1,19 @@
+# Core (PyTorch + vision)
+torch
+torchvision
+
+# Data + utils
+numpy==1.26.4
+pandas==2.2.2
+Pillow==10.4.0
+tqdm==4.66.5
+
+# Plotting
+matplotlib==3.9.2
+
+# Metrics / evaluation
+scikit-learn==1.5.2
+
+# Notebooks
+jupyter==1.1.1
+ipykernel==6.29.5

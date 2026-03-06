@@ -1,0 +1,63 @@
+# =========================
+# Local environments / IDE
+# =========================
+venv/
+.venv/
+env/
+ENV/
+.python-version
+.vscode/
+.idea/
+
+# =========================
+# Python / notebooks cache
+# =========================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# =========================
+# Dataset and generated splits
+# =========================
+data/
+eda_outputs/
+
+# =========================
+# Training artifacts
+# =========================
+models/
+training_outputs/
+outputs/
+artifacts/
+checkpoints/
+runs/
+wandb/
+mlruns/
+
+# Model weights and serialized outputs
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# Common generated files from this project
+preprocessedInspectSample.png
+training_outputs.zip
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+logs/
+tmp/
+temp/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
