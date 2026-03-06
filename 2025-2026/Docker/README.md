@@ -1,12 +1,12 @@
 # Docker Architecture Notes
 
-This folder currently contains design documentation only.
+This folder currently stores Docker-related architecture notes only.
 
 ## Contents
 
-- `docker_highLevel_entities.drawio` : high-level architecture diagram.
+- `docker_highLevel_entities.drawio`: high-level entity/architecture diagram.
 
 ## Usage
 
-- Open in diagrams.net / draw.io.
-- No runnable code in this folder.
+- Open the file with diagrams.net / draw.io.
+- This folder has no runnable code yet.

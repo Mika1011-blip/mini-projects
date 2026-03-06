@@ -40,3 +40,4 @@ Voice-driven assistant prototype combining:
 - This is a local experimental prototype, not production-hardened.
 - Keep secrets/tokens out of notebooks and scripts.
 - If using GPU STT (`device="cuda"`), ensure CUDA runtime is available.
+- Update local file paths and audio devices for your machine before first run.

@@ -1,11 +1,19 @@
 # Projects 2024-2025
 
-Mostly academic projects.
+Academic projects completed during ECE B2.
 
 ## Included Projects
 
-- `Pacman_Allegro_ece_B2` : Pacman clone in C with Allegro.
-- `Ticket_reservation_cpp_ece_B2` : console ticket reservation system in C++.
-- `decathlon_sprintdata_ece_B2` : Decathlon web scraping + MySQL loading pipeline.
+- `Pacman_Allegro_ece_B2`
+  - C game project using Allegro 4.
+  - Includes map files and local build outputs.
+- `Ticket_reservation_cpp_ece_B2`
+  - Console train ticket reservation system in C++.
+  - Includes a legacy archived copy in `projet cpp/`.
+- `decathlon_sprintdata_ece_B2`
+  - Python scraping pipeline + MySQL integration for product data.
 
-See the `README.md` inside each project for details and run instructions.
+## Quick Navigation
+
+- Start from this folder for year-level overview.
+- Open each project `README.md` for dependencies, build steps, and run commands.

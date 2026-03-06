@@ -2,31 +2,31 @@
 
 Console-based C++ reservation system for trains, tickets, and passengers.
 
-## What is in this folder
+## Main Files
 
-- `main.cpp` : app entrypoint.
-- `header.h`, `functions.cpp`, `global.cpp`, `wrapped_functions.cpp` : domain models and business logic.
+- `main.cpp`: application entrypoint.
+- `header.h`, `functions.cpp`, `global.cpp`, `wrapped_functions.cpp`: models and business logic.
 - Data files:
   - `train_management_file.txt`
   - `user_management_file.txt`
   - `billet_management_file.txt`
   - `archives.txt`
-- Code::Blocks project files (`system_billet_reservation.*`).
-- Archived subcopy: `projet cpp/`.
+- Code::Blocks project files: `system_billet_reservation.*`.
+- Archived copy: `projet cpp/`.
 
 ## Features
 
 - Passenger and reservation management.
-- Ticket generation and pricing by class/distance.
-- In-memory schedule/calendar + persistence to text files.
-- Reservation cancellation tracking in archives.
+- Ticket generation and pricing by class and distance.
+- Text-file persistence for users, trains, tickets, and archives.
+- Reservation cancellation tracking.
 
-## Build / Run
+## Build and Run
 
 ### Code::Blocks
 
-- Open `system_billet_reservation.cbp`
-- Build and run from IDE.
+- Open `system_billet_reservation.cbp`.
+- Build and run from the IDE.
 
 ### g++ (manual)
 
@@ -35,5 +35,5 @@ Console-based C++ reservation system for trains, tickets, and passengers.
 
 ## Notes
 
-- This is a learning project with raw pointers and manual ownership.
-- Keep backup copies of data text files before large tests.
+- This is a learning project with manual memory ownership patterns.
+- Backup data text files before destructive test scenarios.

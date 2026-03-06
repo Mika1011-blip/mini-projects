@@ -1,10 +1,12 @@
 # Architecture Diagrams (L1/L2)
 
-This directory stores UML/use-case level diagrams for the trading simulator backend design.
+This directory stores high-level backend/use-case diagrams for the trading simulator design.
 
 ## Contents
 
-- High-level backend architecture diagrams (`.drawio`)
-- Sequence diagram subfolder (`L3 Sequence Diagram/`)
+- `HighLevel_architecture_overview.drawio`
+- `L3 Sequence Diagram/` (deeper sequence and structure views)
 
-Open files with diagrams.net / draw.io.
+## Usage
+
+- Open all files with diagrams.net / draw.io.

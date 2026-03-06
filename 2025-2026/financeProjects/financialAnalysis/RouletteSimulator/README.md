@@ -1,23 +1,23 @@
 # Roulette Simulator
 
-Notebook-based roulette simulation and analysis project.
+Notebook-first roulette simulation and probability analysis project.
 
 ## Contents
 
-- `Roulette simulator.ipynb` : simulation experiments and analysis.
+- `Roulette simulator.ipynb`: simulation experiments, visualizations, and observations.
 
 ## Requirements
 
 - Python 3.x
-- Jupyter Notebook/Lab
-- Typical data stack (`numpy`, `pandas`, `matplotlib`) depending on notebook cells
+- Jupyter Notebook or JupyterLab
+- Common data stack used by the notebook (`numpy`, `pandas`, `matplotlib`)
 
 ## Run
 
 - `jupyter notebook`
 - Open `Roulette simulator.ipynb`
-- Run cells in order.
+- Execute cells in order
 
 ## Notes
 
-- This project is currently notebook-first (no standalone script entrypoint).
+- There is no standalone CLI/app entrypoint in this folder.

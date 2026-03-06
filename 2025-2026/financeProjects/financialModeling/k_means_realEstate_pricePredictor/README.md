@@ -1,24 +1,24 @@
 # K-Means Real Estate Price Predictor
 
-Pipeline to clean real-estate listings data, vectorize features, cluster with custom K-means, and estimate property prices.
+Pipeline to clean real-estate listing data, vectorize features, cluster with custom K-means, and estimate prices.
 
 ## Main Files
 
-- `sl_vectorization.py` : data cleaning and feature engineering utilities.
-- `k_means.py` : custom K-means implementation and helpers.
-- `model.py` : model building + prediction functions.
-- `app.py` : CLI app that loads a parquet model and predicts price.
+- `sl_vectorization.py`: data cleaning and feature engineering helpers.
+- `k_means.py`: custom K-means implementation.
+- `model.py`: model creation and prediction utilities.
+- `app.py`: CLI app loading a saved model and returning predictions.
 - Notebooks:
   - `K-algorithms.ipynb`
   - `vectorize_dataset_seloger.ipynb`
   - `k-means-applied.ipynb`
 
-## Data / Artifacts
+## Data and Artifacts
 
-- `dataset/` : raw + vectorized datasets.
-- `models/` : parquet model files.
-- `graphs/` : generated charts.
-- `backups/` : historical experiments.
+- `dataset/`: raw and transformed datasets.
+- `models/`: saved model artifacts.
+- `graphs/`: generated charts/plots.
+- `backups/`: historical experiment copies.
 
 ## Requirements
 
@@ -27,13 +27,13 @@ Pipeline to clean real-estate listings data, vectorize features, cluster with cu
 
 ## Run CLI Predictor
 
-1. Activate environment.
+1. Activate your environment.
 2. Run:
    - `python app.py`
-3. Provide model path without extension, for example:
+3. Enter model path without extension when prompted, for example:
    - `models/model_sl_10`
 
 ## Notes
 
-- There is a legacy `README.txt`; this `README.md` is the maintained version.
-- Folder includes virtualenv/build artifacts committed during experimentation.
+- `README.txt` is a legacy document; this file is the maintained reference.
+- The folder currently contains local experiment artifacts (including `.venv/`).

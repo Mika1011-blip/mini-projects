@@ -4,7 +4,7 @@ Project planning artifact for a school assignment.
 
 ## Contents
 
-- `GanttProject_Airbnb.gan` : Gantt schedule file.
+- `GanttProject_Airbnb.gan`: Gantt schedule file.
 
 ## Usage
 

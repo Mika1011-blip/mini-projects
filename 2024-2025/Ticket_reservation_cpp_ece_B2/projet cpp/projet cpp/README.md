@@ -1,6 +1,6 @@
 # Archived Project Copy
 
-This folder is an archived copy of the ticket reservation C++ project.
+This directory is a legacy archived copy of the ticket reservation C++ project.
 
 ## Contents
 
@@ -8,5 +8,8 @@ This folder is an archived copy of the ticket reservation C++ project.
 - Source files (`main.cpp`, `functions.cpp`, `header.h`)
 - Local build artifacts (`cmake-build-debug/`)
 
-For the maintained documentation, see:
-`../../README.md`
+## Status
+
+- Not actively maintained.
+- Use the parent project documentation for the current reference:
+  - `../../README.md`
