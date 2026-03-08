@@ -41,7 +41,10 @@ L'analyse montre un déséquilibre de classe significatif : la classe **PNEUMONI
 
 ![desequilibre](../outputs/images/img4.jpg)
 
-### 2.3 Pipeline de traitement (Notebook 02)
+### Vérification anti data leakage (duplication de noms de fichiers dans train/val/test) : 
+- len(filenames) == len(set(filenames)) -> True.
+
+### 2.4 Pipeline de traitement (Notebook 02)
 
 Les images sont majoritairement en niveaux de gris (parfois 3 canaux), ce qui nécessite un **prétraitement standardisé**.
 
@@ -74,7 +77,7 @@ Chargement via un **dataset personnalisé** et un **DataLoader** :
 ### Conception
 Le modèle "from scratch" est conçu pour extraire des caractéristiques hiérarchiques :
 - **Extracteur de caractéristiques** : 3 blocs de convolution ($Conv + ReLU + MaxPool$) augmentant la profondeur (32, 64, 128 filtres).
-- **Classificateur** : Une couche de mise à plat ('Flatten'), une couche dense de 128 neurones avec **Dropout (0.5)**, et une sortie **Sigmoid**.
+- **Classificateur** : Une couche de mise à plat ('Flatten'), une couche dense de 128 neurones avec **Dropout (0.5)**, et une sortie logit (Linear(1)). La sigmoid est appliquée hors modèle.
 
 ![baseline_cnn](../outputs/images/baseline_cnn.jpg)
 

@@ -13,6 +13,11 @@ Notebook-first binary classification project for chest X-ray pneumonia detection
 3. `notebooks/03_evaluation_gradcam.ipynb`
    - Post-training evaluation and interpretability checks (Grad-CAM style analysis).
 
+## Report
+
+- Main report: `reports/rapport.md`
+- This report consolidates conclusions from notebooks `01`, `02`, and `03` (EDA, training, evaluation, and Grad-CAM).
+
 ## Repository Layout
 
 - `data/`: dataset root expected by notebooks (`data/chest_xray/...`).
