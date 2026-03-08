@@ -46,6 +46,11 @@ mlruns/
 *.npy
 *.npz
 
+# Keep final model weights in the tracked models/ folder
+!models/
+!models/*.pt
+!models/*.pth
+
 # Common generated files from this project
 preprocessedInspectSample.png
 training_outputs.zip
