@@ -25,9 +25,9 @@ eda_outputs/
 # =========================
 # Training artifacts
 # =========================
-models/
+#models/
 training_outputs/
-outputs/
+#outputs/
 artifacts/
 checkpoints/
 runs/
