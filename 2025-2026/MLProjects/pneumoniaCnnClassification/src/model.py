@@ -5,7 +5,7 @@ from torchvision.models import ResNet18_Weights, resnet18
 
 
 class BaselineCNN(nn.Module):
-    """3-block CNN baseline used in notebook 02."""
+    """CNN baseline a 3 blocs utilisee dans le notebook 02."""
 
     def __init__(
         self,
@@ -48,7 +48,7 @@ def build_resnet18_binary(
     freeze_backbone: bool = False,
     dropout_p: float = 0.2,
 ) -> nn.Module:
-    """Build ResNet18 with a binary head (1 logit output)."""
+    """Construit ResNet18 avec une tete binaire (sortie 1 logit)."""
     weights = ResNet18_Weights.IMAGENET1K_V1 if pretrained else None
     model = resnet18(weights=weights)
 

@@ -23,7 +23,7 @@ def make_transforms(
     augment: bool = True,
     use_imagenet_norm: bool = True,
 ):
-    """Create base/train/val transforms used in notebook 02."""
+    """Cree les transforms base/train/val utilises dans le notebook 02."""
     mean = IMAGENET_MEAN if use_imagenet_norm else [0.5, 0.5, 0.5]
     std = IMAGENET_STD if use_imagenet_norm else [0.5, 0.5, 0.5]
 
@@ -69,7 +69,7 @@ def resolve_image_path(
     base_dir: str | Path | None = None,
     project_root: str | Path | None = None,
 ) -> Path:
-    """Resolve a potentially relative path against common roots."""
+    """Resout un chemin potentiellement relatif avec des racines usuelles."""
     p = Path(str(path_value))
     candidates = []
 
@@ -88,7 +88,7 @@ def resolve_image_path(
             return candidate
 
     tried = " | ".join(str(c) for c in candidates)
-    raise FileNotFoundError(f"Image file not found: {path_value}. Tried: {tried}")
+    raise FileNotFoundError(f"Image introuvable: {path_value}. Chemins testes: {tried}")
 
 
 class XRayDataset(Dataset):
@@ -147,7 +147,7 @@ def create_loaders(
     project_root: str | Path | None = None,
     cfg: LoaderConfig | None = None,
 ) -> Dict[str, DataLoader]:
-    """Create train/val/test loaders with deterministic seed handling."""
+    """Cree les DataLoaders train/val/test avec une gestion deterministe du seed."""
     cfg = cfg or LoaderConfig()
     seed_everything(cfg.seed)
     generator = torch.Generator()
@@ -210,7 +210,7 @@ def visual_inspect(
     base_dir: str | Path | None = None,
     project_root: str | Path | None = None,
 ):
-    """Show raw / preprocessed(no norm) / preprocessed(norm) samples."""
+    """Affiche des exemples bruts / preprocess sans norm / preprocess avec norm."""
     n = min(n, len(train_df))
     sample = (
         train_df.sample(n=n, random_state=seed)
@@ -226,7 +226,7 @@ def visual_inspect(
             )
         else:
             raise ValueError(
-                "Provide normalized_transform, or pass base_transform as torchvision.transforms.Compose"
+                "Fournir normalized_transform, ou passer base_transform en torchvision.transforms.Compose"
             )
 
     mean = torch.tensor(IMAGENET_MEAN).view(3, 1, 1)
@@ -269,7 +269,7 @@ def export_preprocessed_from_loader_dataset(
     out_dir: str | Path,
     save_tensor: bool = True,
 ) -> Path:
-    """Export displayable PNG + optional exact normalized tensor for each sample."""
+    """Exporte un PNG lisible + un tenseur normalise optionnel pour chaque sample."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     dataset = loader.dataset

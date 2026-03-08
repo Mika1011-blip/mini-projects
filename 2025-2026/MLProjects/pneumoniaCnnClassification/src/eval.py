@@ -21,7 +21,7 @@ IMAGENET_STD_TENSOR = torch.tensor([0.229, 0.224, 0.225]).view(3, 1, 1)
 
 
 def load_model(model, ckpt_path: str | Path, device: str = "cpu"):
-    """Load model weights from a checkpoint and set eval mode."""
+    """Charge les poids d'un checkpoint et place le modele en mode eval."""
     ckpt_path = Path(ckpt_path)
     ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
     model.load_state_dict(ckpt["model_state_dict"])
@@ -33,7 +33,7 @@ def load_val_tensors(
     val_dir: str | Path,
     class_names: Sequence[str] = ("NORMAL", "PNEUMONIA"),
 ):
-    """Load exported .pt tensors from validation folders."""
+    """Charge les tenseurs .pt exportes depuis les dossiers de validation."""
     val_dir = Path(val_dir)
     xs, ys, names, classes = [], [], [], []
 
@@ -50,7 +50,7 @@ def load_val_tensors(
             classes.append(class_name)
 
     if not xs:
-        raise FileNotFoundError(f"No .pt files found under: {val_dir}")
+        raise FileNotFoundError(f"Aucun fichier .pt trouve sous: {val_dir}")
 
     X = torch.stack(xs)
     Y = torch.tensor(ys, dtype=torch.long)
@@ -59,7 +59,7 @@ def load_val_tensors(
 
 @torch.no_grad()
 def evaluate_model(model, X, Y, device: str, threshold: float = 0.5):
-    """Evaluate one model on a full tensor batch."""
+    """Evalue un modele sur un lot complet de tenseurs."""
     model.eval()
     logits = model(X.to(device)).view(-1)
     probs = torch.sigmoid(logits).cpu().numpy()
@@ -82,7 +82,7 @@ def evaluate_model(model, X, Y, device: str, threshold: float = 0.5):
 
 
 def _disable_inplace_relu(model) -> None:
-    """Set every ReLU to inplace=False to avoid Grad-CAM hook issues."""
+    """Passe tous les ReLU en inplace=False pour eviter les conflits de hooks."""
     for module in model.modules():
         if isinstance(module, nn.ReLU):
             module.inplace = False
@@ -131,7 +131,7 @@ def tensor_to_display(
     mean: torch.Tensor = IMAGENET_MEAN_TENSOR,
     std: torch.Tensor = IMAGENET_STD_TENSOR,
 ) -> np.ndarray:
-    """Denormalize one tensor image for plotting."""
+    """Denormalise un tenseur image pour l'affichage."""
     img = x.cpu() * std + mean
     return img.clamp(0, 1).permute(1, 2, 0).numpy()
 
@@ -149,7 +149,7 @@ def plot_gradcam_grid(
     threshold: float = 0.5,
     fig_dir: str | Path | None = None,
 ):
-    """Plot raw image, Grad-CAM heatmap and overlay for n samples."""
+    """Affiche image brute, heatmap Grad-CAM et superposition pour n samples."""
     if n is None:
         n = len(X)
 
@@ -204,10 +204,10 @@ def plot_training_history(
     model_name: str,
     save_path: str | Path | None = None,
 ):
-    """Plot train/val curves from checkpoint history."""
+    """Trace les courbes train/val a partir de l'historique du checkpoint."""
     history = ckpt.get("history", {})
     if not history or "train_loss" not in history:
-        raise ValueError(f"No training history available for {model_name}")
+        raise ValueError(f"Historique d'entrainement indisponible pour {model_name}")
 
     epochs = np.arange(1, len(history["train_loss"]) + 1)
     has_auc = "val_auc" in history and len(history["val_auc"]) == len(epochs)

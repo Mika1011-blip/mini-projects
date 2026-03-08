@@ -13,6 +13,8 @@ from sklearn.metrics import f1_score, precision_score, recall_score, roc_auc_sco
 
 @dataclass(frozen=True)
 class TrainConfig:
+    """Configuration d'entrainement."""
+
     epochs: int = 20
     lr: float = 1e-3
     weight_decay: float = 0.0
@@ -23,6 +25,8 @@ class TrainConfig:
 
 
 def accuracy_from_logits(logits: torch.Tensor, y: torch.Tensor) -> float:
+    """Calcule l'accuracy binaire a partir des logits."""
+
     logits = logits.view(-1)
     y = y.view(-1)
     probs = torch.sigmoid(logits)
@@ -37,6 +41,8 @@ def train_one_epoch(
     optimizer,
     device: str,
 ) -> Tuple[float, float]:
+    """Execute une epoch d'entrainement et retourne loss/accuracy moyennes."""
+
     model.train()
     losses, accs = [], []
     for x, y in loader:
@@ -59,6 +65,8 @@ def validate_one_epoch(
     loss_fn,
     device: str,
 ) -> Tuple[float, float, float]:
+    """Execute une epoch de validation et retourne loss/accuracy/AUC."""
+
     model.eval()
     losses, accs = [], []
     all_probs, all_targets = [], []
@@ -86,6 +94,8 @@ def validate_one_epoch(
 
 
 def fit(model, loaders: Dict[str, torch.utils.data.DataLoader], cfg: TrainConfig):
+    """Boucle complete d'entrainement avec early stopping sur la val loss."""
+
     device = cfg.device
     model.to(device)
 
@@ -105,10 +115,10 @@ def fit(model, loaders: Dict[str, torch.utils.data.DataLoader], cfg: TrainConfig
 
     if pos_weight is None:
         loss_fn = nn.BCEWithLogitsLoss()
-        print("Using BCEWithLogitsLoss without class weighting")
+        print("Utilisation de BCEWithLogitsLoss sans ponderation de classes")
     else:
         loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
-        print(f"Using BCEWithLogitsLoss with pos_weight={pos_weight.item():.4f}")
+        print(f"Utilisation de BCEWithLogitsLoss avec pos_weight={pos_weight.item():.4f}")
 
     optimizer = torch.optim.Adam(
         model.parameters(),
@@ -172,8 +182,8 @@ def fit(model, loaders: Dict[str, torch.utils.data.DataLoader], cfg: TrainConfig
         ):
             stopped_early = True
             print(
-                f"Early stopping at epoch {epoch}. "
-                f"Best epoch was {best_epoch} with val_loss={best_val_loss:.4f}"
+                f"Arret anticipe a l'epoch {epoch}. "
+                f"Meilleure epoch: {best_epoch} (val_loss={best_val_loss:.4f})"
             )
             break
 
@@ -185,6 +195,8 @@ def fit(model, loaders: Dict[str, torch.utils.data.DataLoader], cfg: TrainConfig
 
 
 def plot_training_curves(history, save_path: str | Path | None = None):
+    """Trace les courbes loss/accuracy et AUC de validation (si disponible)."""
+
     epochs = np.arange(1, len(history["train_loss"]) + 1)
     has_auc = "val_auc" in history and len(history["val_auc"]) == len(epochs)
     ncols = 3 if has_auc else 2
@@ -225,6 +237,8 @@ def plot_training_curves(history, save_path: str | Path | None = None):
 
 @torch.no_grad()
 def evaluate_on_test(model, loader, device: str, threshold: float = 0.5):
+    """Evalue un modele sur le loader de test avec un seuil configurable."""
+
     model.eval()
     model.to(device)
     loss_fn = nn.BCEWithLogitsLoss()
@@ -269,6 +283,8 @@ def save_checkpoint(
     test_metrics: dict,
     out_path: str | Path,
 ) -> Path:
+    """Sauvegarde un checkpoint (poids, config, historique, metriques test)."""
+
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(

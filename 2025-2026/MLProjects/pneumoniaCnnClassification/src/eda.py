@@ -19,7 +19,7 @@ def build_df(
     shuffle: bool = True,
     random_state: int = 42,
 ) -> pd.DataFrame:
-    """Index one split into a dataframe (path, label, class_name, split)."""
+    """Indexe un split dans un DataFrame (path, label, class_name, split)."""
     root = Path(data_root)
     allowed_exts = {ext.lower() for ext in img_exts}
     rows = []
@@ -28,7 +28,7 @@ def build_df(
     for class_name, y in label_map.items():
         class_dir = split_dir / class_name
         if not class_dir.exists():
-            raise FileNotFoundError(f"Missing folder: {class_dir}")
+            raise FileNotFoundError(f"Dossier manquant: {class_dir}")
 
         for p in class_dir.rglob("*"):
             if p.is_file() and p.suffix.lower() in allowed_exts:
@@ -55,7 +55,7 @@ def build_all_dfs(
     shuffle: bool = True,
     random_state: int = 42,
 ) -> Dict[str, pd.DataFrame]:
-    """Build indexed dataframes for all splits."""
+    """Construit les DataFrames indexes pour tous les splits."""
     return {
         split: build_df(
             data_root=data_root,
@@ -70,7 +70,7 @@ def build_all_dfs(
 
 
 def find_corrupt_paths(df: pd.DataFrame, path_col: str = "path") -> list[str]:
-    """Return paths that PIL cannot open/verify."""
+    """Retourne les chemins que PIL ne peut pas ouvrir/verifier."""
     bad: list[str] = []
     for p in df[path_col]:
         try:
@@ -82,7 +82,7 @@ def find_corrupt_paths(df: pd.DataFrame, path_col: str = "path") -> list[str]:
 
 
 def collect_sizes(df: pd.DataFrame, path_col: str = "path") -> pd.DataFrame:
-    """Collect basic image metadata (width, height, mode, channels)."""
+    """Collecte les metadonnees image de base (width, height, mode, channels)."""
     shapes = []
     for p in df[path_col]:
         try:
@@ -101,4 +101,3 @@ def collect_sizes(df: pd.DataFrame, path_col: str = "path") -> pd.DataFrame:
         except Exception:
             continue
     return pd.DataFrame(shapes)
-
