@@ -1,63 +1,63 @@
 # Pneumonia CNN Classification
 
-Notebook-first binary classification project for chest X-ray pneumonia detection (`NORMAL` vs `PNEUMONIA`) with PyTorch.
+Projet de classification binaire de radiographies thoraciques (`NORMAL` vs `PNEUMONIA`) avec PyTorch, centre sur les notebooks.
 
-## Project Workflow
+## Workflow du projet
 
 1. `notebooks/01_eda.ipynb`
-   - Dataset inspection, class distribution checks, and sample visualization.
-   - Generates exploratory outputs under `eda_outputs/`.
+   - Inspection du dataset, verification de la distribution des classes et visualisations.
+   - Genere les sorties EDA dans `eda_outputs/`.
 2. `notebooks/02_training_cnn.ipynb`
-   - Data preprocessing, dataloaders, training loop, validation, and test evaluation.
-   - Produces model/output artifacts (for example under `models/` and `training_outputs/`).
+   - Pretraitement, dataloaders, entrainement, validation et evaluation test.
+   - Genere les artefacts (par ex. dans `models/` et `training_outputs/`).
 3. `notebooks/03_evaluation_gradcam.ipynb`
-   - Post-training evaluation and interpretability checks (Grad-CAM style analysis).
+   - Evaluation post-entrainement et verification d'interpretabilite (Grad-CAM).
 
-## Report
+## Rapport
 
-- Main report: `reports/rapport.md`
-- This report consolidates conclusions from notebooks `01`, `02`, and `03` (EDA, training, evaluation, and Grad-CAM).
+- Rapport principal : `reports/rapport.md`
+- Ce rapport consolide les conclusions des notebooks `01`, `02` et `03` (EDA, entrainement, evaluation et Grad-CAM).
 
-## Repository Layout
+## Structure du depot
 
-- `data/`: dataset root expected by notebooks (`data/chest_xray/...`).
-- `notebooks/`: EDA, training, evaluation notebooks.
-- `eda_outputs/`: generated CSV/figure outputs from EDA.
-- `models/`: saved model weights (example: `baseline_cnn_last.pt`).
-- `training_outputs/`: generated outputs such as preprocessed image exports.
-- `src/`: reserved for script refactoring (currently placeholders).
-- `requirements.txt`: Python dependencies.
-- `.gitignore`: ignores datasets, model artifacts, outputs, and virtualenv files.
+- `data/` : racine dataset attendue par les notebooks (`data/chest_xray/...`).
+- `notebooks/` : notebooks EDA, entrainement et evaluation.
+- `eda_outputs/` : sorties CSV/figures generees par l'EDA.
+- `models/` : poids de modeles sauvegardes (exemple : `baseline_cnn_last.pt`).
+- `training_outputs/` : sorties generees (ex. images pretraitees exportees).
+- `src/` : fonctions/scripts reutilisables.
+- `requirements.txt` : dependances Python.
+- `.gitignore` : ignore datasets, artefacts, sorties et environnements virtuels.
 
-## Environment Setup
+## Setup environnement
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+1. Creer et activer un environnement virtuel.
+2. Installer les dependances :
    - `pip install -r requirements.txt`
-3. Register kernel (optional for Jupyter):
+3. Enregistrer un kernel (optionnel pour Jupyter) :
    - `python -m ipykernel install --user --name pneumonia-cnn`
 
-## Optional GPU Setup (CUDA)
+## Setup GPU optionnel (CUDA)
 
-If you want notebook training on GPU, install a CUDA-enabled PyTorch build in the same environment:
+Si tu veux entrainer sur GPU depuis le notebook, installe une version CUDA de PyTorch dans le meme environnement :
 
 - `python -m pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu129`
 
-Verify from notebook or shell:
+Verification notebook ou terminal :
 
 - `python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"`
 
-## Notebook Run Order
+## Ordre d'execution des notebooks
 
-1. Open Jupyter in this folder:
+1. Ouvrir Jupyter dans ce dossier :
    - `jupyter notebook`
-2. Run notebooks in order:
+2. Executer dans l'ordre :
    - `01_eda.ipynb`
    - `02_training_cnn.ipynb`
    - `03_evaluation_gradcam.ipynb`
 
-## Reproducibility Notes
+## Notes de reproductibilite
 
-- Keep data under `data/chest_xray` with `train/`, `val/`, and `test/` class subfolders.
-- Use fixed seeds in training cells for stable experiment comparisons.
-- Save metrics/plots after each run for report-ready tracking.
+- Garder les donnees sous `data/chest_xray` avec sous-dossiers `train/`, `val/`, `test/`.
+- Utiliser des seeds fixes dans les cellules d'entrainement.
+- Sauvegarder metriques/figures apres chaque run pour le suivi.
